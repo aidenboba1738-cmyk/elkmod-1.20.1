@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "B",
+    "M",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "M": {
+      "item": "elkmod:cooked_elk_meat"
+    }
+  },
+  "result": {
+    "item": "elkmod:elk_sandwich"
+  }
+}

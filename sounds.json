@@ -1,0 +1,42 @@
+{
+  "elk_bugle": {
+    "sounds": [
+      {
+        "name": "minecraft:item.goat_horn.sound.0",
+        "type": "event",
+        "pitch": 0.8,
+        "volume": 1.5
+      }
+    ]
+  },
+  "elk_bark": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.llama.angry",
+        "type": "event",
+        "pitch": 1.2,
+        "volume": 1.0
+      }
+    ]
+  },
+  "elk_chirp": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.goat.ambient",
+        "type": "event",
+        "pitch": 1.5,
+        "volume": 0.7
+      }
+    ]
+  },
+  "elk_calf": {
+    "sounds": [
+      {
+        "name": "minecraft:entity.pig.ambient",
+        "type": "event",
+        "pitch": 1.9,
+        "volume": 1.0
+      }
+    ]
+  }
+}

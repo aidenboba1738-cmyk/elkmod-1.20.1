@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "tools",
+  "pattern": [
+    "CC ",
+    "CBH"
+  ],
+  "key": {
+    "C": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "minecraft:bone"
+    },
+    "H": {
+      "item": "elkmod:elk_hide"
+    }
+  },
+  "result": {
+    "item": "elkmod:elk_bugle"
+  }
+}

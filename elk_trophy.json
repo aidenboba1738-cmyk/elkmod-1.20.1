@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "elkmod:elk_trophy",
+          "functions": [
+            {
+              "function": "minecraft:copy_nbt",
+              "source": "block_entity",
+              "ops": [
+                {
+                  "source": "Genes",
+                  "target": "BlockEntityTag.Genes",
+                  "op": "replace"
+                },
+                {
+                  "source": "Bull",
+                  "target": "BlockEntityTag.Bull",
+                  "op": "replace"
+                },
+                {
+                  "source": "Age",
+                  "target": "BlockEntityTag.Age",
+                  "op": "replace"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
