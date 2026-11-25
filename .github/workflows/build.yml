@@ -9,7 +9,14 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-      - run: chmod +x gradlew && ./gradlew build
+      - id: gv
+        run: |
+          V=$(grep -o 'gradle-[0-9.]*-' gradle/wrapper/gradle-wrapper.properties 2>/dev/null | head -1 | sed 's/gradle-//; s/-$//')
+          echo "ver=${V:-8.1.1}" >> $GITHUB_OUTPUT
+      - uses: gradle/actions/setup-gradle@v3
+        with:
+          gradle-version: ${{ steps.gv.outputs.ver }}
+      - run: gradle build
       - uses: actions/upload-artifact@v4
         with:
           name: elk-mod
